@@ -6,6 +6,8 @@ Baixe o termux no [F-Droid](https://f-droid.org/repository/browse/?fdid=com.term
 
 Baixe também um editor de arquivos que lhe permita gestionar os arquivos do termux. Recomendo o [Material Files](https://github.com/zhanghai/MaterialFiles). Veja mais na [termux wiki](https://wiki.termux.com/wiki/Internal_and_external_storage).
 
+Também pode ser util um teclado virtual "de respeito". Recomendo o [AnySoftKeyboard](http://anysoftkeyboard.github.io/download/).
+
 # Configuração inicial
 
 Seguem os comandos que utilizo ao instalar o termux.
