@@ -67,6 +67,8 @@ export DISPLAY=":1"
 
 Lembrando de trocar o `1` pelo id do seu servidor.
 
+Note que os dois últimos comandos devem ser executados sempre que o servidor for reiniciado.
+
 ## Cliente
 
 Há muitas formas de conectar o servidor ao cliente, você pode redirecionar a porta através do roteador (não recomendo) ou simplesmente acessar pela rede local desde outro pc.
