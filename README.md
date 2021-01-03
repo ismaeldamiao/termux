@@ -58,4 +58,5 @@ wget https://raw.githubusercontent.com/ismaeldamiao/scripts/master/.bashrc
 
 # Servidores
 
-* Para configurar o ssh veja [ssh.md](ssh.md)
+* Para configurar o ssh veja [ssh.md](ssh.md).
+* Para configurar o vnc veja [vnc.md](vnc.md).
