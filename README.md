@@ -12,14 +12,16 @@ Para edição de códigos recomendo o [DroidEdit](https://play.google.com/store/
 
 # Configuração inicial
 
-Seguem os comandos que utilizo ao instalar o termux.
+Após atualizar os pacotes, esses são os pacotes esenciais que instalo no termux:
 
 ```bash
-# Atualizar e baixar pacotes
-apt update
-apt upgrade
-apt install nano wget ncurses-utils coreutils gnupg
-# Atalhos
+apt update && apt upgrade -y
+apt install -y nano wget ncurses-utils coreutils gnupg
+```
+
+Assim é como configuro as teclas especiais ([saiba mais](https://wiki.termux.com/wiki/Touch_Keyboard)):
+
+```bash
 mkdir .termux
 cat > $HOME/.termux/termux.properties <<EOF
 extra-keys = [\
@@ -41,7 +43,11 @@ bell-character=ignore
 back-key=back
 EOF
 termux-reload-settings
-# bashrc
+```
+
+E, como não pode faltar, baixo meu .bashrc:
+
+```bash
 wget https://raw.githubusercontent.com/ismaeldamiao/scripts/master/.bashrc
 ```
 
