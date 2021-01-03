@@ -18,3 +18,8 @@ echo "   Port 22" >> $PREFIX/etc/ssh/ssh_config
 if [ -e $PREFIX/etc/ssh/sshd_config ]; then rm $PREFIX/etc/ssh/sshd_config; fi
 echo "Port 2225" >> $PREFIX/etc/ssh/sshd_config
 ```
+# Configure sua senha
+
+```bash
+passwd
+```
