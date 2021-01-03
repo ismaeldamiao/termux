@@ -29,7 +29,7 @@ fluxbox-generate_menu
 exec fluxbox
 EOF
 
-chmod 755 xstartup
+chmod 755 ~/.vnc/xstartup
 ```
 
 Para iniciar servidor vnc use:
