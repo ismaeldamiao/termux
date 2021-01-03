@@ -39,5 +39,5 @@ wget https://raw.githubusercontent.com/ismaeldamiao/scripts/master/.bashrc
 
 # Programação
 
-* Para usar o gcc e o gfortran use o script [install-termux-cctools.bash](install-termux-cctools.sh)
+* Para usar o gcc e o gfortran use o script [install-termux-cctools.sh](install-termux-cctools.sh)
 * Para usar o jre e o jdk 9 use o script [java-arm.sh](java-arm.sh)
