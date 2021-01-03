@@ -11,10 +11,10 @@ apt update && apt install -y openssh
 Como sugestão faça
 
 ```bash
-if [ -a $PREFIX/etc/ssh_config ]; then rm $PREFIX/etc/ssh/ssh_config; fi
+if [ -e $PREFIX/etc/ssh_config ]; then rm $PREFIX/etc/ssh/ssh_config; fi
 echo "Host *" >> $PREFIX/etc/ssh/ssh_config
 echo "   Port 22" >> $PREFIX/etc/ssh/ssh_config
 
-if [ -a $PREFIX/etc/ssh/sshd_config ]; then rm $PREFIX/etc/ssh/sshd_config; fi
+if [ -e $PREFIX/etc/ssh/sshd_config ]; then rm $PREFIX/etc/ssh/sshd_config; fi
 echo "Port 2225" >> $PREFIX/etc/ssh/sshd_config
 ```
