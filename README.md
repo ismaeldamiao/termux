@@ -60,3 +60,7 @@ wget https://raw.githubusercontent.com/ismaeldamiao/scripts/master/.bashrc
 
 * Para configurar o ssh veja [ssh.md](ssh.md).
 * Para configurar o vnc veja [vnc.md](vnc.md).
+
+# CHROOT
+
+Para usar o chroot instale o ˋprootˋ e execute o script [ubuntu.sh](ubuntu.sh).
