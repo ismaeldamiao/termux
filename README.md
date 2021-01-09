@@ -63,4 +63,4 @@ wget https://raw.githubusercontent.com/ismaeldamiao/scripts/master/.bashrc
 
 # CHROOT
 
-Para usar o chroot instale o ˋprootˋ e execute o script [ubuntu.sh](ubuntu.sh).
+Para usar o chroot instale o `proot` e execute o script [ubuntu.sh](ubuntu.sh).
