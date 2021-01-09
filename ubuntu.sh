@@ -30,7 +30,11 @@ echo "Descompactando imagem"
 [ -d ${dir} ] && rm ${dir}
 mkdir ${dir}
 cd ${dir}
-proot --link2symlink tar -xf ../${tarball} --exclude='dev'||:
+if [ "$PREFIX" == "/data/data/com.termux/files/usr" ]; then
+   proot --link2symlink tar -xf ../${tarball} --exclude='dev'
+else
+   proot tar -xf ../${tarball} --exclude='dev'
+fi
 echo "nameserver 1.1.1.1" > etc/resolv.conf
 cd ..
 
@@ -42,19 +46,14 @@ cd \$(dirname \$0)
 ## unset LD_PRELOAD in case termux-exec is installed
 unset LD_PRELOAD
 command="proot"
-command+=" --link2symlink"
+[ "\$PREFIX" == "/data/data/com.termux/files/usr" ] && command+=" --link2symlink"
 command+=" -0"
 command+=" -r ${dir}"
-if [ -n "\$(ls -A binds)" ]; then
-    for f in binds/* ;do
-      . \$f
-    done
-fi
 command+=" -b /dev"
 command+=" -b /proc"
 ## uncomment the following line to have access to the home directory of termux
 #command+=" -b /data/data/com.termux/files/home:/root"
-## uncomment the following line to mount /sdcard directly to / 
+## uncomment the following line to mount /sdcard directly to /
 #command+=" -b /sdcard"
 command+=" -w /root"
 command+=" /usr/bin/env -i"
@@ -71,10 +70,10 @@ else
 fi
 EOF
 
-[ -e ${HOME}/.bashrc ] && cp $HOME/.bashrc ${dir}/root
+[ -e ${HOME}/.bashrc ] && cp ${HOME}/.bashrc ${dir}/root
 
 termux-fix-shebang ${bin}
-chmod 755 ${bin}
+chmod 700 ${bin}
 
 echo "Você já pode iniciar o ubuntu digitando ./${bin}"
 
