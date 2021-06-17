@@ -8,7 +8,7 @@ Baixe também um editor de arquivos que lhe permita gestionar os arquivos do ter
 
 Também pode ser util um teclado virtual "de respeito". Recomendo o [AnySoftKeyboard](http://anysoftkeyboard.github.io/download/).
 
-Para edição de códigos recomendo o [DroidEdit](https://play.google.com/store/apps/details?id=com.aor.droidedit.pro).
+Para edição de códigos recomendo o [DroidEdit](https://play.google.com/store/apps/details?id=com.aor.droidedit).
 
 # Configuração inicial
 
